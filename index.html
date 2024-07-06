@@ -9,7 +9,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
 
     <!-- Optional: ~REPLACE~ content with your Google Client ID -->
@@ -22,7 +22,7 @@
   <body>
     <script>
       function onSignIn(googleUser) {
-        const id_token = googleUser.getAuthResponse().id_token;
+        const id_token = googleUser.sub;
         const ChartsEmbedSDK = window.ChartsEmbedSDK;
 
         const sdk = new ChartsEmbedSDK({
@@ -43,8 +43,12 @@
       <div id="login-page" class="login-page">
         <div class="form">
           <div class="login-form">
-            <h1 class="form-title">Secure Chart Viewer</h1>
-            <div class="g-signin2 googleButton" data-onsuccess="onSignIn"></div>
+            <h1 class="form-title">Acessar NPK NOW!</h1>
+            <div id="g_id_onload"
+                data-client_id="166616457446-k9mro4rok7blk8e55ujdfe60qo0poe38.apps.googleusercontent.com"
+                data-callback="onSignIn">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
           </div>
         </div>
       </div>
