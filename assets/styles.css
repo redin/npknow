@@ -1,5 +1,5 @@
 #dashboard {
-  border-top: none;
+  border-top: 1vh;
   background-color: #f9fbfa;
   flex-grow: 1;
   height: 100%;
