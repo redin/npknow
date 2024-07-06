@@ -8,8 +8,8 @@
 }
 
 .chart-container {
-  height: fit-content;
-  width: fit-content;
+  height: 95%;
+  width: 95%;
   margin: auto;
   text-align: center;
 }
