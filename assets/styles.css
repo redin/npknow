@@ -28,7 +28,7 @@ body #lock::before {
   content: "🔒";
 }
 
-body.logged-in #chart {
+body.logged-in #dashboard {
   visibility: visible;
 }
 
