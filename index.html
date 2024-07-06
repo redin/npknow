@@ -22,7 +22,7 @@
   <body>
     <script>
       function onSignIn(googleUser) {
-        const id_token = googleUser.sub;
+        const id_token = googleUser.credential;
         const ChartsEmbedSDK = window.ChartsEmbedSDK;
 
         const sdk = new ChartsEmbedSDK({
