@@ -12,7 +12,6 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://unpkg.com/@mongodb-js/charts-embed-dom"></script>
 
-    <!-- Optional: ~REPLACE~ content with your Google Client ID -->
     <meta
       name="google-signin-client_id"
       content="166616457446-k9mro4rok7blk8e55ujdfe60qo0poe38.apps.googleusercontent.com"
@@ -26,16 +25,16 @@
         const ChartsEmbedSDK = window.ChartsEmbedSDK;
 
         const sdk = new ChartsEmbedSDK({
-          baseUrl: "https://charts.mongodb.com/charts-talante-mjazwlv", // Optional: ~REPLACE~ with your Charts URL
+          baseUrl: "https://charts.mongodb.com/charts-talante-mjazwlv",
           getUserToken: () => id_token,
         });
 
-        const chart = sdk.createChart({
-          chartId: "66860d7b-4101-437c-811d-195a41478fd8", // Optional: ~REPLACE~ with your Chart ID
+        const dashboard = sdk.createDashboard({
+          dashboardId: "6686034e-afba-4c0e-8614-476fb7e07e29",
         });
 
         document.body.classList.toggle("logged-in", true);
-        chart.render(document.getElementById("chart"));
+        dashboard.render(document.getElementById("dashboard"));
       }
     </script>
     <main>
