@@ -1,4 +1,4 @@
-#chart {
+#dashboard {
   border-top: none;
   background-color: #f9fbfa;
   flex-grow: 1;
@@ -7,7 +7,7 @@
   visibility: hidden;
 }
 
-.chart-container {
+.dashboard-container {
   height: 95vh;
   width: 90vw;
   margin: auto;
